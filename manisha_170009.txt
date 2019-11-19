@@ -1,0 +1,149 @@
+mysql> show tables;
++------------------------+
+| Tables_in_project_mani |
++------------------------+
+| artifacts              |
+| effortcategory         |
+| interruption           |
+| life_cycle             |
+| roles                  |
+| steps                  |
+| tasks                  |
+| tb_condition           |
+| tb_defects             |
+| tb_plans               |
++------------------------+
+10 rows in set (0.05 sec)
+
+mysql> select* from life_cycle;
++--------------+----------------+-----------------------+
+| lifecycle_id | lifecycle_name | lifecycle_description |
++--------------+----------------+-----------------------+
+|            1 | Manisha        | Manisha Bambal 170009 |
+|            2 | Mani           | software development  |
+|            3 | lifecycle1     | lifecycle             |
+|            4 | condition1     | condition applied     |
+|            5 | condition2     | condition applied     |
+|            6 | condition3     | condition applied     |
+|            7 | aedcfghnkl     | dtghjkl               |
++--------------+----------------+-----------------------+
+7 rows in set (0.03 sec)
+
+mysql> select* from artifacts;
++-------------+---------------+----------------------+
+| artifact_id | artifact_name | artifact_description |
++-------------+---------------+----------------------+
+|           1 | manisha       | BAmbal               |
+|           2 | Varsha        | BAmbal               |
+|           3 | Mohit         | Bambal               |
+|           4 | sd            | dfsd                 |
+|           5 | Artifacts oo9 | sdfghj               |
+|           6 | Artifacts 243 | sdfghj_34567         |
++-------------+---------------+----------------------+
+6 rows in set (0.04 sec)
+
+mysql> select* from interruption;
++-----------------+-------------------+--------------------------+
+| interruption_ID | interruption_name | interruption_description |
++-----------------+-------------------+--------------------------+
+|               1 | asdfghjkl         | asdfghjk                 |
+|               2 | Interruption      | manisha                  |
+|               3 | Interruption 1    | manisha                  |
+|               4 | Interruption 12   | manisha                  |
++-----------------+-------------------+--------------------------+
+4 rows in set (0.04 sec)
+
+mysql> select* from effortcategory;
++-------------------+---------------------+----------------------------+
+| effortcategory_id | effortcategory_name | effortcategory_description |
++-------------------+---------------------+----------------------------+
+|                 1 | category            | categrories                |
+|                 2 | category            | categrories                |
+|                 3 | category_170009     | categrories                |
+|                 4 | category_mani       | categrories                |
+|                 5 | asdfghjk            | sdfghjk                    |
+|                 6 | Category 1          | bambal                     |
+|                 7 | Category 2          | bambal                     |
+|                 8 | Category 3          | bambal                     |
+|                 9 | Category 3          | bambal                     |
++-------------------+---------------------+----------------------------+
+9 rows in set (0.00 sec)
+
+mysql> select* from roles;
++---------+-----------+------------------+
+| role_id | role_name | role_description |
++---------+-----------+------------------+
+|       1 | Manager   | will handle it   |
+|       2 | Employee  | will handle it   |
+|       3 | asdfghj   | vyugj            |
+|       4 | Intern    | Mani             |
+|       5 | Teacher   | SDians           |
++---------+-----------+------------------+
+5 rows in set (0.03 sec)
+
+mysql> select* from steps;
++---------+-----------+------------------+
+| step_id | step_name | step_description |
++---------+-----------+------------------+
+|       1 | step 1    | stepsss          |
+|       2 | step 2    | steps            |
+|       3 | step 3    | steps            |
+|       4 | awedfghjk | dftghj           |
+|       5 | awedfghjk | dftghj           |
+|       6 | dfgh      | fgh              |
++---------+-----------+------------------+
+6 rows in set (0.04 sec)
+
+mysql> select* from tasks;
++---------+-----------+------------------+----------+----------------+--------------------+
+| task_id | task_name | task_description | roles    | used_artifacts | produced_artifacts |
++---------+-----------+------------------+----------+----------------+--------------------+
+|       1 | Hello     | dfkjn            | asdfghj, | sd,            | sd,                |
+|       2 | Task01    | not completed    |          |                |                    |
+|       3 | Task02    | not completed    |          |                |                    |
++---------+-----------+------------------+----------+----------------+--------------------+
+3 rows in set (0.02 sec)
+
+mysql> select* from tb_condition;
++--------------+----------------+-----------------------+
+| condition_id | condition_name | condition_description |
++--------------+----------------+-----------------------+
+|            1 | condition1     | condition             |
+|            2 | condition 2    | condition             |
+|            3 | condition 3    | condition applied     |
+|            4 | aqwsdftghjikl  | awsdfrtghjik          |
++--------------+----------------+-----------------------+
+4 rows in set (0.03 sec)
+
+mysql> select* from tb_plans
+    -> select* from tb_plans;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'select* from tb_plans' at line 2
+mysql> select* from tb_plans;
++---------+-----------+---------------------+
+| plan_id | plan_name | plan_description    |
++---------+-----------+---------------------+
+|       1 | Plan 1    | plans               |
+|       2 | plan_23   | this is the plan    |
+|       3 | plan_008  | this is the plan    |
+|       4 | oji       | hgyug               |
+|       5 | Plan 1    | It will be execute  |
+|       6 | Plan 2    | It will be execute  |
+|       7 | Plan 3    | It will be execute  |
++---------+-----------+---------------------+
+7 rows in set (0.03 sec)
+
+mysql> select* from tb_defects;
++-----------+-------------+--------------------+
+| defect_id | defect_name | defect_description |
++-----------+-------------+--------------------+
+|         1 | defect_63t7 | defects are there  |
+|         2 | defect_009  | defects are there  |
+|         3 | defects     | defect_manisha     |
+|         4 | swdefgh     | chgvjhk            |
+|         5 | Defect 1    | No defect          |
+|         6 | Defect 12   | No defect          |
+|         7 | Defect 03   | No defect          |
++-----------+-------------+--------------------+
+7 rows in set (0.01 sec)
+
+mysql> Terminal close -- exit!
